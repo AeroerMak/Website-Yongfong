@@ -1,0 +1,89 @@
+.feedbackform {
+	width:auto;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#666;
+}
+.feedbackform hr{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dotted;
+	border-left-style: none;
+	border-bottom-color: #CCC;
+}
+/****************************************************************/
+::-webkit-input-placeholder {font-family:'Open Sans', sans-serif; color:#666; font-size: 12px;}
+:-moz-placeholder {font-family:'Open Sans', sans-serif; color:#666; font-size: 12px;}
+::-moz-placeholder {font-family:'Open Sans', sans-serif; color:#666; font-size: 12px;}
+:-ms-input-placeholder {font-family:'Open Sans', sans-serif; color:#666; font-size: 12px;}
+
+/****************************************************************/
+.feedbackform input[type=text],
+.feedbackform input[type=number],
+.feedbackform input[type=tel],
+.feedbackform input[type=email],
+.feedbackform input[type=date],
+.feedbackform input[type=file],
+.quote #AntiSpam,
+.feedbackform textarea,
+.feedbackform select,
+#captcha
+{
+	border: 1px solid #ccc;
+	background-color:rgba(255,255,255,1);
+	padding: 10px 15px;
+	margin:3px 0px;
+	outline:none;
+	width: 100%;
+	box-sizing:border-box;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	}
+.quote .margin_right{
+	margin-right:5px !important;
+	}
+#captcha{
+	text-align: center
+}
+/****************************************************************/
+.quote flex{
+	display: -webkit-flex; /* Safari */
+  display: flex;
+	}
+
+@media only screen and (max-width: 540px) {
+.quote flex{
+  display: block;
+	}
+.quote .margin_right{
+	margin-right:0px;
+	}	
+}
+/****************************************************************/
+.quote input[type=submit]{
+	color: #ffffff;
+	background-color: #00630e;
+	cursor:pointer;
+	border:none;
+}
+
+/****************************************************************/
+.feedbackform #captcha{
+	background-image: url(feedback/captcha.gif);
+	background-size: cover;
+	color:#000;
+	text-align:center;
+	/* disable select */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size:18px;
+
+}
